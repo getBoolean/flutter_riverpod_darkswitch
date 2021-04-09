@@ -24,12 +24,12 @@ class MyApp extends HookWidget {
     return MaterialApp.router(
       routeInformationParser: BeamerRouteInformationParser(),
       routerDelegate: BeamerRouterDelegate(
-          locationBuilder: SimpleLocationBuilder(
-              routes: {
-                '/': (context) => MyHomePage(),
-                '/settings': (context) => Settings()
-              }
-          )
+        locationBuilder: SimpleLocationBuilder(
+          routes: {
+            '/': (context) => MyHomePage(),
+            '/settings': (context) => Settings()
+          }
+        )
       ),
       title: 'Flutter Demo',
       theme: AppTheme.lightTheme,
