@@ -28,9 +28,7 @@ class MyHomePage extends StatelessWidget {
             child: Row(
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
-                Text("Light Mode"),
-                DarkModeSwitch(),
-                Text("Dark Mode"),
+                Text("Go to Settings to change the theme"),
               ],
             ),
           ),
