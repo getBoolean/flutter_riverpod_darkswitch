@@ -1,36 +1,3 @@
-import 'package:flutter/material.dart';
-
-class AppTheme {
-  // Private Constructor
-  AppTheme._();
-
-  static final lightTheme = ThemeData(
-    scaffoldBackgroundColor: Colors.white,
-    appBarTheme: AppBarTheme(
-      color: Colors.teal,
-      iconTheme: IconThemeData(
-        color: Colors.white,
-      ),
-    ),
-    textTheme: TextTheme(
-      bodyText2: TextStyle(
-        color: Colors.black,
-      ),
-    ),
-  );
-
-  static final darkTheme = ThemeData(
-    scaffoldBackgroundColor: Colors.black,
-    appBarTheme: AppBarTheme(
-      color: Colors.black,
-      iconTheme: IconThemeData(
-        color: Colors.white,
-      ),
-    ),
-    textTheme: TextTheme(
-      bodyText2: TextStyle(
-        color: Colors.white,
-      ),
-    ),
-  );
-}
+export 'package:flutter_riverpod_darkswitch/ui/app_theme/app_theme_provider.dart';
+export 'package:flutter_riverpod_darkswitch/ui/app_theme/app_theme_state.dart';
+export 'package:flutter_riverpod_darkswitch/ui/app_theme/app_theme_data.dart';
