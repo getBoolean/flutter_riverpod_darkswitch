@@ -11,7 +11,7 @@ class MyHomePage extends StatelessWidget {
         title: Row(
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
           children: [
-            Text("Flutter Theme Riverpod Demo"),
+            Text("Beamer/Riverpod Theme Demo"),
             IconButton(
               icon: Icon(Icons.settings),
               onPressed: () {
