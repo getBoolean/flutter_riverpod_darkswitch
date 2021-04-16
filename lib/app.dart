@@ -7,19 +7,21 @@ import 'package:flutter_riverpod_darkswitch/ui/settings/settings_page.dart';
 import 'package:hooks_riverpod/hooks_riverpod.dart';
 
 class MyApp extends HookWidget {
+  final _routerDelegate = BeamerRouterDelegate(
+    locationBuilder: SimpleLocationBuilder(
+      routes: {
+        '/': (context) => MyHomePage(),
+        '/settings': (context) => Settings()
+      },
+    ),
+  );
+
   @override
   Widget build(BuildContext context) {
     final darkModeEnabled = useProvider(appThemeStateNotifier);
     return MaterialApp.router(
       routeInformationParser: BeamerRouteInformationParser(),
-      routerDelegate: BeamerRouterDelegate(
-        locationBuilder: SimpleLocationBuilder(
-          routes: {
-            '/': (context) => MyHomePage(),
-            '/settings': (context) => Settings()
-          }
-        )
-      ),
+      routerDelegate: _routerDelegate,
       title: 'Flutter Demo',
       theme: AppTheme.lightTheme,
       darkTheme: AppTheme.darkTheme,
