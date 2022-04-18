@@ -2,6 +2,8 @@ import 'package:beamer/beamer.dart';
 import 'package:flutter/material.dart';
 
 class MyHomePage extends StatelessWidget {
+  const MyHomePage({Key? key}) : super(key: key);
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -10,9 +12,9 @@ class MyHomePage extends StatelessWidget {
         title: Row(
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
           children: [
-            Text("Beamer/Riverpod Theme Demo"),
+            const Text('Beamer/Riverpod Theme Demo'),
             IconButton(
-              icon: Icon(Icons.settings),
+              icon: const Icon(Icons.settings),
               onPressed: () {
                 Beamer.of(context).beamToNamed('/settings');
               },
@@ -25,7 +27,7 @@ class MyHomePage extends StatelessWidget {
           Expanded(
             child: Row(
               mainAxisAlignment: MainAxisAlignment.center,
-              children: [Text("Go to Settings to change the theme")],
+              children: const [Text('Go to Settings to change the theme')],
             ),
           ),
         ],

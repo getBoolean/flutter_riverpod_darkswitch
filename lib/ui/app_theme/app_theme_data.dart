@@ -6,13 +6,13 @@ class AppTheme {
 
   static final lightTheme = ThemeData(
     scaffoldBackgroundColor: Colors.white,
-    appBarTheme: AppBarTheme(
+    appBarTheme: const AppBarTheme(
       color: Colors.teal,
       iconTheme: IconThemeData(
         color: Colors.white,
       ),
     ),
-    textTheme: TextTheme(
+    textTheme: const TextTheme(
       bodyText2: TextStyle(
         color: Colors.black,
       ),
@@ -21,13 +21,13 @@ class AppTheme {
 
   static final darkTheme = ThemeData(
     scaffoldBackgroundColor: Colors.black,
-    appBarTheme: AppBarTheme(
+    appBarTheme: const AppBarTheme(
       color: Colors.black,
       iconTheme: IconThemeData(
         color: Colors.white,
       ),
     ),
-    textTheme: TextTheme(
+    textTheme: const TextTheme(
       bodyText2: TextStyle(
         color: Colors.white,
       ),
