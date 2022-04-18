@@ -1,6 +1,5 @@
 import 'package:beamer/beamer.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_riverpod_darkswitch/ui/widgets/dark_mode_switch.dart';
 
 class MyHomePage extends StatelessWidget {
   @override
@@ -19,17 +18,14 @@ class MyHomePage extends StatelessWidget {
               },
             )
           ],
-        )
-
+        ),
       ),
       body: Column(
         children: [
           Expanded(
             child: Row(
               mainAxisAlignment: MainAxisAlignment.center,
-              children: [
-                Text("Go to Settings to change the theme"),
-              ],
+              children: [Text("Go to Settings to change the theme")],
             ),
           ),
         ],
